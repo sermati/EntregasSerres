@@ -1,0 +1,41 @@
+* {
+    overflow-x: hidden;
+    font-family: $tipografia-principal;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separador {
+    height: 3em;
+    background-color: #E6E7E8;
+}
+
+.colorPrincipal {
+    color: $color-primario-osc;  
+}
+
+.bg-primary{
+    background-color:$color-primario-osc;
+}
+  
+.bg-secondary{
+    background-color: $color-secundario-osc;
+}
+
+.navbar-nav .nav-link.active {
+    color: $color-primario-osc;  
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 600;
+    color: $color-secundario-osc;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }

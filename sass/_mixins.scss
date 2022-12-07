@@ -1,0 +1,5 @@
+@mixin recuadro($padding, $color){
+    border: 5px solid $color;
+    border-radius: 0.5rem;
+    padding: $padding;
+}
