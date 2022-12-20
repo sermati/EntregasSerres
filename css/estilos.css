@@ -1,6 +1,9 @@
-* {
+body {
   overflow-x: hidden;
   font-family: "Montserrat"; }
+
+a:hover {
+  color: #5EA4FF; }
 
 .centrar {
   display: flex;
@@ -32,6 +35,23 @@
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
 
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 9.5rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center; }
+
+.botonPrimario {
+  color: #DB9E2C;
+  background-color: #45658F;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none; }
+
 .barraNavegacion {
   color: #45658F;
   background-color: #E6E7E8; }
@@ -62,6 +82,9 @@
     background-image: linear-gradient(to right, #234a7d, #2c5a96, #366bb0, #3f7cca, #498de5); }
     .servicios .tarjeta .tarjetain {
       margin: 4px; }
+      @media screen and (min-width: 768) {
+        .servicios .tarjeta .tarjetain {
+          height: 11rem; } }
       .servicios .tarjeta .tarjetain img {
         height: 100%;
         object-fit: cover; }
@@ -91,7 +114,8 @@
 
 footer p {
   color: #8F5E04;
-  font-weight: 650; }
+  font-weight: 650;
+  margin: 0; }
 
 footer a {
   color: #45658F;
@@ -100,10 +124,14 @@ footer a {
 
 footer .footer {
   background-color: #E6E7E8; }
+  footer .footer p {
+    margin-bottom: 1rem; }
 
 footer .footCopyright {
   padding: 1.5em;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400; }
 
 footer .facebook {
   color: #3b5998;
@@ -118,3 +146,11 @@ footer .instagram {
 footer .twitter {
   color: #1DA1F2;
   font-size: 1.1rem; }
+
+.texto404 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+
+.quienes-somos p {
+  line-height: 2rem; }

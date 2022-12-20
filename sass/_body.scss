@@ -1,6 +1,10 @@
-* {
+body {
     overflow-x: hidden;
     font-family: $tipografia-principal;
+}
+
+a:hover {
+    color: $color-primario;
 }
 
 .centrar{
@@ -19,7 +23,7 @@
 }
 
 .bg-primary{
-    background-color:$color-primario-osc;
+    background-color: $color-primario-osc;
 }
   
 .bg-secondary{
@@ -38,4 +42,23 @@
     color: $color-secundario-osc;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 9.5rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.botonPrimario {
+    color: $color-secundario;
+    background-color: $color-primario-osc;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}

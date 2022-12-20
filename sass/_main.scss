@@ -33,7 +33,12 @@
     .tarjeta {
         background-image: linear-gradient(to right, #234a7d, #2c5a96, #366bb0, #3f7cca, #498de5);
         .tarjetain {
-            margin: 4px;  
+            margin: 4px;
+
+            @media screen and (min-width: 768) {
+                height: 11rem;
+            }
+            
             img {
                 height: 100%;
                 object-fit: cover;
@@ -74,6 +79,7 @@ footer {
     p{
         color: #8F5E04;
         font-weight: 650;
+        margin: 0;
     }
     a{
         color:#45658F;
@@ -82,10 +88,15 @@ footer {
     }
     .footer{
         background-color: #E6E7E8;
+        p{
+            margin-bottom: 1rem;
+        }
     }
     .footCopyright {
         padding: 1.5em;
         text-align: center;
+        font-size: 0.8rem;
+        font-weight: 400;
     }
     .facebook {
         color: map-get($colores-redes, facebook);
@@ -101,5 +112,19 @@ footer {
     .twitter {
         color: map-get($colores-redes, twitter);
         font-size: 1.1rem;
+    }
+}
+
+// SECCION ERROR 404
+.texto404 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+// SECCION QUIENES SOMOS
+.quienes-somos {
+    p {
+        line-height: 2rem;
     }
 }
